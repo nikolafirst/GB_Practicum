@@ -2,17 +2,8 @@
 3 -> Среда 
 5 -> Пятница*/
 
-Console.WriteLine ("Введите пожалуйста целое число от 1 до 7: ");
+Console.Write("Введите пожалуйста целое число от 1 до 7: ");
 int number = int.Parse(Console.ReadLine());
-
-int number1 = 1;
-int number2 = 2;
-int number3 = 3;
-int number4 = 4;
-int number5 = 5;
-int number6 = 6;
-int number7 = 7;
-
 switch (number) 
 {
     case (1):
@@ -42,6 +33,11 @@ switch (number)
     case (7):
     Console.WriteLine("Поздравляем, сегодня Воскресенье");
     break;
+
+    default:
+    Console.WriteLine("Дни недели закончились :))");
+    break;
+
 }
 
 
