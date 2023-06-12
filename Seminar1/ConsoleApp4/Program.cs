@@ -7,6 +7,15 @@
 Console.Write("Введите целое трехзначное число: ");
 double number = double.Parse(Console.ReadLine());
 
-double number1 = number % 10.0;
 
-Console.Write($"Последняя цифра числа: {number1}");
+if (99 < number && number < 1000)
+{
+    double number1 = number % 10.0;
+    Console.Write($"Последняя цифра числа: {number1}");
+}
+
+else
+{
+    Console.Write("ВВеденное число не соответствует указанному диапазону");
+}
+
